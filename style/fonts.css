@@ -1,0 +1,19 @@
+/* latin */
+@font-face {
+  font-family: "Exo2";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../assets/fonts/Exo_2/Exo2-Regular.ttf);
+}
+
+/* latin */
+@font-face {
+  font-family: "Exo2";
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../assets/fonts/Exo_2/Exo2-Italic.ttf);
+}

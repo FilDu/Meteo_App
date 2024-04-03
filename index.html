@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo widget</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="./assets/fontawesome/css/all.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header id="city"></header>
+        <div class="weatherContainer">
+            <div class="weather">
+                <img src="" alt="weatherIcon" id="weatherIcon">
+                <span id="weatherText"></span>
+            </div>
+            <div class="temperatures">
+                <div>
+                    <span id="date" class="date"></span>
+                    <div class="temperature infoBox">
+                        <i class="fa-solid fa-temperature-half">&nbsp;</i>
+                        <span id="temperature"></span>
+                        <span>&nbsp;°C</span>
+                    </div>
+                </div>
+                <div class="secondaryTemps">
+                    <div class="temperature infoBox">
+                        <span>ressentie: &nbsp;</span>
+                        <span id="feels_like"></span>
+                        <span>&nbsp;°C</span>
+                    </div>
+                    <div class="temperature infoBox">
+                        <span>min: &nbsp;</span>
+                        <span id="min_temp"></span>
+                        <span>&nbsp;°C</span>
+                    </div>
+                    <div class="temperature infoBox">
+                        <span>max: &nbsp;</span>
+                        <span id="max_temp"></span>
+                        <span>&nbsp;°C</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="extraInfosContainer">
+            <div class="infoBox">
+                <i class="fa-solid fa-wind">&nbsp;</i>
+                <div>
+                    <div class="info">
+                        <span id="wind"></span>
+                        <span>&nbsp;km/h</span>
+                    </div>
+                    <span>Vitesse du vent</span>
+                </div>
+            </div>
+            <div class="infoBox">
+                <img src="./assets/icons/humidity-svgrepo-com.svg" />
+                <div>
+                    <div class="info">
+                        <span id="humidity"></span>
+                        <span>&nbsp;%</span>
+                    </div>
+                    <span>humidité</span>
+                </div>
+            </div>
+            <div class="infoBox sunset">
+                <img src="./assets/icons/wb_twilight_FILL0_wght400_GRAD0_opsz24.svg" />
+                <div>
+                    <div class="info">
+                        <span id="sunset"></span>
+                        <span>&nbsp;</span>
+                    </div>
+                    <span>Couché de soleil</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./app.js"></script>
+    <!-- <script src="./app.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+  "apiKey": "f77a9095ec1457b41e9d6f000f117a1f",
+  "delay": 3600000,
+  "city": "",
+  "defaultWeather": {
+    "city": "Bordeaux",
+    "temp": 9.38,
+    "feels_like": 7.7,
+    "temp_min": 9.1,
+    "temp_max": 9.6,
+    "pressure": 1020,
+    "humidity": 94,
+    "windSpeed": 3.1,
+    "description": "partiellement nuageux",
+    "icon": "https://openweathermap.org/img/wn/04d@2x.png",
+    "sunset": 1711304367
+  }
+}
