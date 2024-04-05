@@ -7,7 +7,8 @@ import {
 } from "./utils/functions.js";
 import dataJson from "./config.json" with { type: "json" };
 
-const defaultWeather = dataJson.defaultWeather;
+/**for testing without connection */
+const defaultWeather = dataJson.fakeWeather;
 
 const apiKey = dataJson.apiKey;
 const delay = dataJson.delay;
@@ -18,7 +19,7 @@ const displayMeteo = async () => {
   const city = selectedCity ? selectedCity : location.city;
 
   let weather = { ...defaultWeather };
-  // weather = await getWeatherByCity(city, apiKey);
+  weather = await getWeatherByCity(city, apiKey);
   const currentDate = getCurrentDate();
   const sunsetTime = getSunsetTime(weather.sunset);
 

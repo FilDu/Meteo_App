@@ -1,5 +1,13 @@
+/**
+ * capitalise string
+ * @param {String} str
+ */
 export const capitalise = (str) => str[0].toUpperCase() + str.slice(1);
 
+/**
+ * get location details base on ip address
+ * @returns {Object} locationResult
+ */
 export const getLocation = async () => {
   try {
     const IpResponse = await fetch("https://api.ipify.org?format=json");
@@ -14,6 +22,12 @@ export const getLocation = async () => {
   }
 };
 
+/**
+ * get weather details for given city
+ * @param {String} city
+ * @param {Number} apiKey
+ * @returns {Object} weather
+ */
 export const getWeatherByCity = async (city, apiKey) => {
   const cityName = city;
   const url =
@@ -44,8 +58,13 @@ export const getWeatherByCity = async (city, apiKey) => {
   }
 };
 
+/**
+ * convert sunset time timestamp into string
+ * @param {Number} date
+ * @returns {String} sunsetTime
+ */
 export const getSunsetTime = (date) => {
-  const sunsetDate = new Date(date);
+  const sunsetDate = new Date(date * 1000);
   const sunsetTime = `${sunsetDate.getHours()}:${sunsetDate
     .getMinutes()
     .toString()
@@ -53,6 +72,10 @@ export const getSunsetTime = (date) => {
   return sunsetTime;
 };
 
+/**
+ * get current date and time
+ * @returns {String} currentDate
+ */
 export const getCurrentDate = () => {
   const now = new Date();
   const months = [
